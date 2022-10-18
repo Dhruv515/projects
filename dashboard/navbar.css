@@ -1,0 +1,39 @@
+@import url("https://fonts.googleapis.com/css2?family=Ms+Madi&display=swap");
+
+nav {
+  left: 0;
+  right: 0;
+  width: 100% !important;
+  display: flex !important;
+}
+
+.navbar-brand {
+  font-family: "Ms Madi", cursive;
+  font-weight: bolder;
+  font-size: xx-large !important;
+}
+
+.navbar,
+.navbar-nav {
+  padding: 10px !important;
+  font-size: large;
+}
+
+.navbar {
+  background: white;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+  width: 100%;
+}
+
+.navbar a:hover{
+  color: crimson !important;
+}
+
+.contact a{
+    text-decoration: none;
+    font-weight: bold;
+    color: black !important;
+}
+.navbar a:active{
+    opacity: 0.5;
+}

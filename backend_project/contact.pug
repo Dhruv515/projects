@@ -1,0 +1,37 @@
+extends base.pug
+
+block scripts
+    script(src='/static/index.js')
+
+block style 
+    style
+        include ../static/stylecontact.css
+
+
+
+block content
+    section.section2 
+       div.card2 
+            div.form
+            form(action="/contact",onsubmit="return validation()", method= "post", class= "myForm")
+                div.f1
+                <label for="uname" class= "l1">name:</label>
+                <input type="text" class= "myInput" id="uname" name="uname" placeholder="Enter your name..">
+                 <span id="errorname" style="font-size: 10px; color: red;"></span>
+                div.f1
+                <label for="phone number" class= "l1">phone:</label>
+                <input type="phone" class= "myInput" id="phone" name="phone" placeholder="Enter your name..">
+                 <span id="errorphone" style="font-size: 10px; color: red;"></span>
+                div.f1
+                <label for="city" class= "l1">city:</label>
+                <input type="text" class= "myInput" id="city" name="city" placeholder="Enter your city..">
+                 <span id="errorcity" style="font-size: 10px; color: red;"></span>
+                div.f1
+                <label for="age" class= "l1">age:</label>
+                <input type="text" class= "myInput" id="age" name="age" placeholder="Your age..">
+                 <span id="errorage" style="font-size: 10px; color: red;"></span>
+                <button type = "submit" class="btn" >submit </button>
+                
+    section.section4 
+       div.footer 
+          <p> heyy hii i am footer! </p> 

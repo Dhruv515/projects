@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700&display=swap');
+
+
+
+
+.container {
+    font-family: 'Nunito Sans', sans-serif;
+    display: flex;
+    justify-content: space-between;
+    height: auto;
+    width: fit-content;
+    justify-content: space-around;
+}
+
+
+div.bottom {
+    background: #575b61;
+    padding: 20px 30px;
+    border-radius: 30px;
+    box-shadow: 0 0 4px rgb(0, 0, 0, 0.6);
+}
+
+div.expense-income-tab {
+    display: flex;
+    align-items: center;
+    margin-bottom: 16px;
+}
+
+span.expense-tab {
+    color: #9ca3c2;
+    font-weight: 700;
+    font-size: 16px;
+}
+
+span.income-tab {
+    color: #9ca3c2;
+    font-weight: 700;
+    font-size: 16px;
+    margin-left: 30px;
+    margin-right: auto;
+}
+
+span.expense-tab:hover, span.income-tab:hover{
+    cursor: pointer;
+    color: crimson;
+}
+
+span.expense-tab:active, span.income-tab:active{
+    color: rgb(238, 165, 179);
+}
+
+
+circle.transaction-track {
+    stroke: #e3e7e8;
+    stroke-width: 2;
+    fill: none;
+}
+
+circle.transaction-progress {
+    stroke-width: 3;
+    stroke-dasharray: 175;
+    fill: none;
+    stroke-linecap: round;
+    transform-origin: center;
+    transform: rotate(-90deg);
+}
+
+div.transaction-row {
+    display: flex;
+    align-items: center;
+    padding-bottom: 10px;
+}
+
+div.transaction-icon {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 60px;
+    margin-bottom: 10px;
+}
+
+
+div.transaction-name-col {
+    display: flex;
+    flex-direction: column;
+    margin-right: auto;
+    margin-left: 15px;
+}
+
+span.transaction-name,
+span.transaction-amount {
+    font-weight: 700;
+    font-size: 14px;
+    margin-bottom: 3px;
+    color: #EEE;
+}
+
+span.transaction-desc,
+span.transaction-amount-desc {
+    font-weight: 600;
+    font-size: 10px;
+    color: #9ca3c2;
+}
+
+div.transaction-amount-col {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-left: 15px;
+}
+
+span.active {
+    color: #EEE;
+    border-bottom: 3px solid crimson;
+}
